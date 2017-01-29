@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Backgrounds -->
+	<color name="Background">#faf7d9</color>
+	<color name="Background.Title">#dbd6ba</color>
+	<color name="Background.Diagnose.MediApp">#ffffff</color>
+	<color name="Background.Diagnose.Patient">@color/Background.Title</color>
+
+	<!-- Texts -->
+	<color name="Text">#508500</color>
+	<color name="Text.Title">#446e09</color>
+	<color name="Text.Caption">#7fb522</color>
+	<color name="Text.Highlight">#557d19</color>
+
+	<!-- Borders -->
+	<color name="Border.Diagnose.MediApp">@color/Text.Caption</color>
+	<color name="Border.Diagnose.Patient">@color/Text.Title</color>
+
+</resources>

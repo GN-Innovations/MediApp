@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_4"
+                tools:context="nyshgale.android.mediapp.library.DialogEdit">
+
+	<ImageButton
+		android:id="@+id/imagebutton_remove__edit_library_symptom"
+		style="@style/AppTheme.Button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginLeft="@dimen/dimen_8"
+		android:layout_marginStart="@dimen/dimen_8"
+		android:contentDescription="@string/function_delete"
+		android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+
+	<AutoCompleteTextView
+		android:id="@+id/autotext_name__edit_library_symptom"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@+id/imagebutton_remove__edit_library_symptom"
+		android:layout_toStartOf="@id/imagebutton_remove__edit_library_symptom"
+		android:completionThreshold="3"
+		android:hint="@string/symptom_name"
+		android:inputType="textCapWords">
+
+		<requestFocus/>
+	</AutoCompleteTextView>
+
+</RelativeLayout>

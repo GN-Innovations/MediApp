@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:onClick="start"
+              android:orientation="vertical"
+              android:padding="@dimen/dimen_16"
+              tools:context="nyshgale.android.mediapp.ActivityLauncher">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:orientation="vertical">
+
+			<ImageView
+				android:id="@+id/image_logo__activity_launcher"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:contentDescription="@string/app_name"
+				android:scaleType="fitCenter"
+				android:src="@drawable/logo"/>
+
+			<TextView
+				android:id="@+id/textview_opening__activity_launcher"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:padding="@dimen/dimen_16"
+				android:text="@string/msg_opening"
+				android:textAppearance="@style/AppTheme.TextAppearance.AppTitle"/>
+
+		</LinearLayout>
+	</RelativeLayout>
+
+	<ProgressBar
+		android:id="@+id/progress_init__activity_launcher"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="@dimen/dimen_4"
+		android:paddingLeft="@dimen/dimen_16"
+		android:paddingRight="@dimen/dimen_16"/>
+
+	<TextView
+		android:id="@+id/textview_init__activity_launcher"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:lines="1"
+		android:paddingLeft="@dimen/dimen_16"
+		android:paddingRight="@dimen/dimen_16"
+		android:paddingTop="@dimen/dimen_4"
+		android:text="@string/msg_init"
+		android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
+
+	<TextView
+		android:id="@+id/textview_tap__activity_launcher"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="@dimen/dimen_16"
+		android:text="@string/msg_tap_start"
+		android:textAppearance="@style/AppTheme.TextAppearance.Highlight"
+		android:visibility="invisible"/>
+
+</LinearLayout>

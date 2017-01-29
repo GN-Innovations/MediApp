@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context="nyshgale.android.mediapp.ActivityDiagnose">
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginBottom="@dimen/dimen_8"
+		android:layout_marginLeft="@dimen/dimen_64"
+		android:layout_marginStart="@dimen/dimen_64"
+		android:layout_marginTop="@dimen/dimen_8"
+		android:background="@color/Border.Diagnose.Patient"
+		android:paddingEnd="@dimen/dimen_8"
+		android:paddingLeft="0dp"
+		android:paddingRight="@dimen/dimen_8"
+		android:paddingStart="0dp">
+
+		<TextView
+			android:id="@+id/textview_msg__view_diagnosis_patient"
+			style="@style/AppTheme.Diagnose.Patient"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_8"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>

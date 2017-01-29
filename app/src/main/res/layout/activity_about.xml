@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="nyshgale.android.mediapp.ActivityAbout">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:orientation="vertical">
+
+		<ImageView
+			android:id="@+id/image_logo__activity_about"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_16"
+			android:contentDescription="@string/app_name"
+			android:scaleType="center"
+			android:src="@drawable/logo"/>
+
+		<TextView
+			android:id="@+id/textview_app_version__activity_about"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_16"
+			android:text="@string/app_version"
+			android:textAppearance="@style/AppTheme.TextAppearance.Label"/>
+
+		<TextView
+			android:id="@+id/textview_library_version__activity_about"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_16"
+			android:text="@string/library_version"
+			android:textAppearance="@style/AppTheme.TextAppearance.Label"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

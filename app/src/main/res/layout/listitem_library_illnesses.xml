@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_4"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingTop="0dp">
+
+	<TextView
+		android:id="@+id/textview_name__listitem_library_illnesses"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:lines="1"
+		android:text="@string/illness_name"
+		android:textAppearance="@style/AppTheme.TextAppearance.Highlight"/>
+
+	<TextView
+		android:id="@+id/textview_description__listitem_library_illnesses"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textview_name__listitem_library_illnesses"
+		android:layout_marginLeft="@dimen/dimen_16"
+		android:layout_marginStart="@dimen/dimen_16"
+		android:lines="1"
+		android:text="@string/illness_description"
+		android:textAppearance="@style/AppTheme.TextAppearance.Description"/>
+
+</RelativeLayout>

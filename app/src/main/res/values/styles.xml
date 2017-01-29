@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!-- main theme -->
+	<style name="AppTheme"
+	       parent="android:Theme.Holo.Light">
+		<item name="android:editTextBackground">@android:drawable/edit_text</item>
+		<item name="android:editTextColor">@color/Text</item>
+		<item name="android:dropDownSpinnerStyle">@style/AppTheme.Spinner</item>
+		<item name="android:windowBackground">@color/Background</item>
+		<item name="android:textColor">@color/Text</item>
+	</style>
+
+	<!-- launcher theme -->
+	<style name="LauncherTheme"
+	       parent="android:Theme.Holo.Light.NoActionBar">
+		<item name="android:background">@color/Background</item>
+		<item name="android:textColor">@color/Text</item>
+	</style>
+
+	<!-- TextAppearance begin -->
+
+	<style name="AppTheme.TextAppearance.AppTitle"
+	       parent="android:TextAppearance.Large">
+		<item name="android:textSize">@dimen/size_24</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/Text.Title</item>
+	</style>
+
+	<style name="AppTheme.TextAppearance.Title"
+	       parent="android:TextAppearance.Large">
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/Text.Title</item>
+	</style>
+
+	<style name="AppTheme.TextAppearance.Highlight"
+	       parent="android:TextAppearance.Large">
+		<item name="android:textColor">@color/Text.Highlight</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="AppTheme.TextAppearance.Label"
+	       parent="android:TextAppearance.Large">
+		<item name="android:textColor">@color/Text.Title</item>
+	</style>
+
+	<style name="AppTheme.TextAppearance.Description"
+	       parent="android:TextAppearance.Medium">
+		<item name="android:textColor">@color/Text.Caption</item>
+	</style>
+
+	<style name="AppTheme.TextAppearance.Caption"
+	       parent="android:TextAppearance.Small">
+		<item name="android:textColor">@color/Text.Caption</item>
+	</style>
+
+	<!-- TextAppearance end -->
+
+	<!-- Buttons begin -->
+
+	<style name="AppTheme.Button">
+		<item name="android:background">?android:selectableItemBackground</item>
+		<item name="android:scaleType">fitCenter</item>
+	</style>
+
+	<!-- Buttons end -->
+
+	<!-- Spinner -->
+	<style name="AppTheme.Spinner"
+	       parent="android:Widget.Spinner.DropDown">
+		<item name="android:background">@android:drawable/edit_text</item>
+		<item name="android:spinnerMode">dialog</item>
+	</style>
+
+	<!-- customs -->
+
+	<!-- Diagnose.MediApp -->
+	<style name="AppTheme.Diagnose.MediApp"
+	       parent="android:TextAppearance.Medium">
+		<item name="android:background">@color/Background.Diagnose.MediApp</item>
+		<item name="android:textColor">@color/Text</item>
+	</style>
+
+	<!-- Diagnose.Patient -->
+	<style name="AppTheme.Diagnose.Patient"
+	       parent="android:TextAppearance.Medium">
+		<item name="android:background">@color/Background.Diagnose.Patient</item>
+		<item name="android:textColor">@color/Text</item>
+	</style>
+
+</resources>

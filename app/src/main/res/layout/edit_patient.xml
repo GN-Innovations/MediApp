@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:divider="@android:drawable/divider_horizontal_textfield"
+		android:orientation="vertical"
+		android:showDividers="middle">
+
+		<TextView
+			android:id="@+id/textview_code__edit_patient"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_16"
+			android:text="@string/patient_code"
+			android:textAppearance="@style/AppTheme.TextAppearance.Label"/>
+
+		<AutoCompleteTextView
+			android:id="@+id/autotext_lastname__edit_patient"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8"
+			android:completionThreshold="3"
+			android:hint="@string/patient_lastname"
+			android:inputType="textCapWords"/>
+
+		<AutoCompleteTextView
+			android:id="@+id/autotext_firstname__edit_patient"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8"
+			android:completionThreshold="3"
+			android:hint="@string/patient_firstname"
+			android:inputType="textCapWords"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8">
+
+			<TextView
+				android:id="@+id/textview_age__edit_patient"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/dimen_8"
+				android:text="@string/patient_age"
+				android:textAppearance="@style/AppTheme.TextAppearance.Label"/>
+
+			<EditText
+				android:id="@+id/edittext_age__edit_patient"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toEndOf="@+id/textview_age__edit_patient"
+				android:layout_toRightOf="@+id/textview_age__edit_patient"
+				android:ems="3"
+				android:focusable="false"
+				android:inputType="number"
+				android:onClick="showDatePicker"/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8">
+
+			<TextView
+				android:id="@+id/textview_gender__edit_patient"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_margin="@dimen/dimen_8"
+				android:text="@string/patient_gender"
+				android:textAppearance="@style/AppTheme.TextAppearance.Label"/>
+
+			<Spinner
+				android:id="@+id/spinner_gender__edit_library_symptom"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toEndOf="@+id/textview_gender__edit_patient"
+				android:layout_toRightOf="@+id/textview_gender__edit_patient"
+				android:entries="@array/patients_gender"
+				android:prompt="@string/patient_gender"/>
+		</RelativeLayout>
+
+	</LinearLayout>
+</ScrollView>

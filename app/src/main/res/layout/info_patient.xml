@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/Background"
+		android:divider="@android:drawable/divider_horizontal_textfield"
+		android:orientation="vertical"
+		android:showDividers="middle">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/Background.Title"
+			android:gravity="center"
+			android:padding="@dimen/dimen_8"
+			android:text="@string/patient"
+			android:textAppearance="@style/AppTheme.TextAppearance.Title"/>
+
+		<TextView
+			android:id="@+id/textview_code__info_patient"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_8"
+			android:text="@string/patient_code"
+			android:textAppearance="@style/AppTheme.TextAppearance.Description"/>
+
+		<TextView
+			android:id="@+id/textview_name__info_patient"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_8"
+			android:text="@string/patient_name"
+			android:textAppearance="@style/AppTheme.TextAppearance.Label"/>
+
+		<TextView
+			android:id="@+id/textview_age__info_patient"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_8"
+			android:text="@string/patient_age"
+			android:textAppearance="@style/AppTheme.TextAppearance.Description"/>
+
+		<TextView
+			android:id="@+id/textview_gender__info_patient"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_8"
+			android:text="@string/patient_gender"
+			android:textAppearance="@style/AppTheme.TextAppearance.Description"/>
+
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="nyshgale.android.mediapp.patients.ActivityPatientDiagnosis">
+
+	<LinearLayout
+		android:id="@+id/layout_main__info_diagnosis"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/Background"
+		android:divider="@android:drawable/divider_horizontal_textfield"
+		android:orientation="vertical"
+		android:showDividers="middle">
+
+		<TextView
+			android:id="@+id/textview_datetime__info_diagnosis"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="end"
+			android:padding="@dimen/dimen_8"
+			android:text="@string/diagnosis_datetime"
+			android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_8">
+
+			<TextView
+				android:id="@+id/textview_patient_code__info_diagnosis"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/patient_code"
+				android:textAppearance="@style/AppTheme.TextAppearance.Description"/>
+
+			<TextView
+				android:id="@+id/textview_patient_name__info_diagnosis"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/textview_patient_code__info_diagnosis"
+				android:background="@color/Background.Title"
+				android:paddingEnd="@dimen/dimen_8"
+				android:paddingLeft="@dimen/dimen_8"
+				android:paddingRight="@dimen/dimen_8"
+				android:paddingStart="@dimen/dimen_8"
+				android:text="@string/patient_name"
+				android:textAppearance="@style/AppTheme.TextAppearance.Title"/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_8">
+
+			<TextView
+				android:id="@+id/textview_symptoms__info_diagnosis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/illness_symptoms"
+				android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
+
+			<LinearLayout
+				android:id="@+id/linearlayout_symptoms__info_diagnosis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/textview_symptoms__info_diagnosis"
+				android:orientation="vertical"/>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_8">
+
+			<TextView
+				android:id="@+id/textview_causes__info_diagnosis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/illness_causes"
+				android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
+
+			<LinearLayout
+				android:id="@+id/linearlayout_causes__info_diagnosis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/textview_causes__info_diagnosis"
+				android:orientation="vertical"/>
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/textview_illness__info_diagnosis"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/Background.Title"
+			android:padding="@dimen/dimen_8"
+			android:text="@string/illness"
+			android:textAppearance="@style/AppTheme.TextAppearance.Title"/>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="@dimen/dimen_8">
+
+			<TextView
+				android:id="@+id/textview_medications__info_diagnosis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/illness_medications"
+				android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
+
+			<LinearLayout
+				android:id="@+id/linearlayout_medications__info_diagnosis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/textview_medications__info_diagnosis"
+				android:orientation="vertical"/>
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/textview_remedies_label__info_diagnosis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/dimen_8"
+				android:text="@string/illness_remedies"
+				android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
+
+			<TextView
+				android:id="@+id/textview_remedies__info_diagnosis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/dimen_16"
+				android:text="@string/illness_remedies"
+				android:textAppearance="@style/AppTheme.TextAppearance.Description"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/textview_notes_label__info_diagnosis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/dimen_8"
+				android:text="@string/illness_notes"
+				android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
+
+			<TextView
+				android:id="@+id/textview_notes__info_diagnosis"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="@dimen/dimen_16"
+				android:text="@string/illness_notes"
+				android:textAppearance="@style/AppTheme.TextAppearance.Description"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">MediApp</string>
+	<string name="app_version">App Version</string>
+	<string name="library_version">Library Version</string>
+	<string name="disclaimer">Disclaimer</string>
+
+	<!-- messages -->
+	<string name="msg_opening">Hi, I\'m MediApp, your friendly Health Care Provider.</string>
+	<string name="msg_tap_start">Tap anywhere to start </string>
+	<string name="msg_init">Initializing &#8230;</string>
+	<string name="msg_init_success">Initializations successful.</string>
+	<string name="msg_init_failed">Initializations failed.</string>
+	<string name="msg_diagnose_start">How may I help you? What are you feeling that you think is a threat to your health?</string>
+	<string name="msg_diagnose_symptom">Enter symptom</string>
+	<string name="msg_current_patient">Current Patient</string>
+	<string name="msg_disclaimer">Disclaimer Message</string>
+
+	<!-- prompts -->
+	<string name="prompt_symptom_input">Refer from the library for symptoms\' input</string>
+	<string name="prompt_library_saved">Input has been saved</string>
+	<string name="prompt_library_failed">Failed to save input</string>
+	<string name="prompt_no_records">No Records</string>
+
+	<!-- activities -->
+	<string name="about_activity">About</string>
+	<string name="launcher_activity">MediApp</string>
+	<string name="main_activity">MediApp</string>
+	<string name="diagnose_activity">Diagnosis</string>
+	<string name="patients_activity">Patients</string>
+	<string name="patient_records_activity">Records</string>
+	<string name="patient_activity">Patient</string>
+	<string name="library_activity">Library</string>
+	<string name="library_illness_activity">Illness</string>
+
+	<!-- functions -->
+	<string name="function_cancel">Cancel</string>
+	<string name="function_change">Change</string>
+	<string name="function_delete">Delete</string>
+	<string name="function_edit">Edit</string>
+	<string name="function_filter">Filter</string>
+	<string name="function_new">New</string>
+	<string name="function_no">No</string>
+	<string name="function_ok">OK</string>
+	<string name="function_save">Save</string>
+	<string name="function_yes">Yes</string>
+
+	<!-- symptoms -->
+	<string name="symptom">Symptom</string>
+	<string name="symptom_name">Name</string>
+
+	<!-- causes -->
+	<string name="cause">Cause</string>
+	<string name="cause_details">Details</string>
+
+	<!-- medications -->
+	<string name="medication">Medication</string>
+	<string name="medication_name">Name</string>
+
+	<!-- illnesses -->
+	<string name="illness">Illness</string>
+	<string name="illness_name">Name</string>
+	<string name="illness_description">Description</string>
+	<string name="illness_symptoms">Symptoms</string>
+	<string name="illness_causes">Causes</string>
+	<string name="illness_medications">Medications</string>
+	<string name="illness_remedies">Remedies</string>
+	<string name="illness_notes">Notes</string>
+
+	<!-- patients -->
+	<string name="patient">Patient</string>
+	<string name="patient_code">Code</string>
+	<string name="patient_name">Name</string>
+	<string name="patient_lastname">Last Name</string>
+	<string name="patient_firstname">First Name</string>
+	<string name="patient_age">Age</string>
+	<string name="patient_gender">Gender</string>
+
+	<string name="diagnosis">Diagnosis</string>
+	<string name="diagnosis_datetime">DateTime</string>
+	<string name="diagnosis_change_patient">Change Patient</string>
+
+	<!-- menu -->
+	<string name="action_about">About</string>
+	<string name="action_patients">Patients</string>
+	<string name="action_patients_records">Records</string>
+	<string name="action_library">Library</string>
+	<string name="action_library_illnesses">Illnesses</string>
+	<string name="action_library_medications">Medications</string>
+	<string name="action_library_symptoms">Symptoms</string>
+	<string name="action_library_causes">Causes</string>
+	<string name="action_library_export">Export Library</string>
+	<string name="action_library_import">Import Library</string>
+	<string name="action_export_to_pdf">Export to PDF</string>
+
+</resources>

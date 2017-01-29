@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_4"
+                android:paddingLeft="@dimen/dimen_16"
+                android:paddingRight="@dimen/dimen_16"
+                android:paddingTop="0dp">
+
+	<TextView
+		android:id="@+id/textview_code__listitem_patients"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginBottom="@dimen/dimen_8"
+		android:layout_marginLeft="@dimen/dimen_16"
+		android:layout_marginStart="@dimen/dimen_16"
+		android:layout_marginTop="@dimen/dimen_8"
+		android:lines="1"
+		android:text="@string/patient_code"
+		android:textAppearance="@style/AppTheme.TextAppearance.Label"/>
+
+	<TextView
+		android:id="@+id/textview_lastname__listitem_patients"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_toLeftOf="@id/textview_code__listitem_patients"
+		android:layout_toStartOf="@id/textview_code__listitem_patients"
+		android:lines="1"
+		android:text="@string/patient_lastname"
+		android:textAppearance="@style/AppTheme.TextAppearance.Description"/>
+
+	<TextView
+		android:id="@+id/textview_firstname__listitem_patients"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/textview_lastname__listitem_patients"
+		android:layout_marginLeft="@dimen/dimen_16"
+		android:layout_marginStart="@dimen/dimen_16"
+		android:layout_toLeftOf="@id/textview_code__listitem_patients"
+		android:layout_toStartOf="@id/textview_code__listitem_patients"
+		android:lines="1"
+		android:text="@string/patient_firstname"
+		android:textAppearance="@style/AppTheme.TextAppearance.Caption"/>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:id="@+id/linearlayout_messages__fragment_disclaimer"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/Background"
+              android:divider="@android:drawable/divider_horizontal_textfield"
+              android:orientation="vertical"
+              android:showDividers="middle">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/Background.Title"
+		android:gravity="center"
+		android:padding="@dimen/dimen_8"
+		android:text="@string/disclaimer"
+		android:textAppearance="@style/AppTheme.TextAppearance.Title"/>
+
+	<TextView
+		android:id="@+id/textview_message__fragment_disclaimer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/dimen_8"
+		android:text="@string/msg_disclaimer"
+		android:textAppearance="@style/AppTheme.TextAppearance.Description"/>
+
+</LinearLayout>

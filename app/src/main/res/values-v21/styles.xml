@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="AppTheme"
+	       parent="android:Theme.Material.Light">
+		<item name="android:editTextBackground">@android:drawable/edit_text</item>
+		<item name="android:editTextColor">@color/Text</item>
+		<item name="android:windowBackground">@color/Background</item>
+		<item name="android:textColor">@color/Text</item>
+	</style>
+
+	<style name="LauncherTheme"
+	       parent="android:Theme.Material.Light.NoActionBar">
+		<item name="android:windowBackground">@color/Background</item>
+		<item name="android:textColor">@color/Text</item>
+	</style>
+
+</resources>

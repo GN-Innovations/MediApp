@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="nyshgale.android.mediapp.library.ActivityIllness">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:divider="@android:drawable/divider_horizontal_textfield"
+		android:orientation="vertical"
+		android:showDividers="middle">
+
+		<AutoCompleteTextView
+			android:id="@+id/autotext_name__edit_library_illness"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8"
+			android:completionThreshold="3"
+			android:hint="@string/illness_name"
+			android:inputType="textCapWords">
+
+			<requestFocus/>
+		</AutoCompleteTextView>
+
+		<EditText
+			android:id="@+id/edittext_description__edit_library_illness"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8"
+			android:gravity="top|start"
+			android:hint="@string/illness_description"
+			android:inputType="textCapSentences|textMultiLine"/>
+
+		<fragment
+			android:id="@+id/fragment_symptoms__edit_library_illness"
+			android:name="nyshgale.android.mediapp.library.FragmentIllnessSymptoms"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8"
+			tools:layout="@layout/fragment_library_illness_symptoms"/>
+
+		<fragment
+			android:id="@+id/fragment_causes__edit_library_illness"
+			android:name="nyshgale.android.mediapp.library.FragmentIllnessCauses"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8"
+			tools:layout="@layout/fragment_library_illness_causes"/>
+
+		<fragment
+			android:id="@+id/fragment_medications__edit_library_illness"
+			android:name="nyshgale.android.mediapp.library.FragmentIllnessMedications"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8"
+			tools:layout="@layout/fragment_library_illness_medications"/>
+
+		<EditText
+			android:id="@+id/edittext_remedies__edit_library_illness"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8"
+			android:gravity="top|start"
+			android:hint="@string/illness_remedies"
+			android:inputType="textCapSentences|textMultiLine"/>
+
+		<EditText
+			android:id="@+id/edittext_notes__edit_library_illness"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/dimen_8"
+			android:gravity="top|start"
+			android:hint="@string/illness_notes"
+			android:inputType="textCapSentences|textMultiLine"/>
+	</LinearLayout>
+
+</ScrollView>
